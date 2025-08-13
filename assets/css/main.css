@@ -218,6 +218,10 @@
     border-top: 1px solid var(--border-color);
 }
 
+[data-theme="dark"] .footer::before {
+    display: none;
+}
+
 [data-theme="dark"] .footer-links a {
     color: var(--text-muted);
 }
