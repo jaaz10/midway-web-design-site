@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midway Web Design | Modern Web Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Updated Header with proper airplane icon and toned down background -->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <!-- Real airplane icon -->
+                <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path>
+                </svg>
+                <span class="logo-text">
+                    <span class="logo-main">Midway</span>
+                    <span class="logo-main">Web</span>
+                    <span class="logo-main">Designing</span>
+                </span>
+            </a>
+            
+            <nav class="main-nav">
+                <ul class="nav-list" id="navList">
+                    <li class="nav-item"><a href="#home" class="nav-link active" data-translate="nav_home">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link" data-translate="nav_services">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link" data-translate="nav_work">Work</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link" data-translate="nav_about">About</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link" data-translate="nav_testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-controls">
+                <a href="#contact" class="btn btn-primary get-started-btn" data-translate="nav_cta">Get Started</a>
+                <button id="langToggle" class="lang-toggle" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Hero Section - Redesigned -->
+<section class="hero" id="home">
+    <div class="hero-shape-1"></div>
+    <div class="hero-shape-2"></div>
+    
+    <div class="container">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1 class="hero-title" data-translate="hero_title">Creating Digital <span>Experiences</span> That Inspire</h1>
+                <p class="hero-text" data-translate="hero_subtitle">We design and develop modern websites and applications that help businesses connect with their audience and achieve their goals.</p>
+                <div class="hero-cta">
+                    <a href="#portfolio" class="btn btn-primary" data-translate="hero_cta_primary">View Our Work</a>
+                    <a href="#contact" class="btn btn-outline" data-translate="hero_cta_secondary">Get in Touch</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-translate="hero_stat_1_number">15+</span>
+                        <span class="stat-text" data-translate="hero_stat_1_text">Years Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-translate="hero_stat_2_number">350+</span>
+                        <span class="stat-text" data-translate="hero_stat_2_text">Projects Completed</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-translate="hero_stat_3_number">99%</span>
+                        <span class="stat-text" data-translate="hero_stat_3_text">Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <div class="floating-shape shape-1"></div>
+                    <div class="floating-shape shape-2"></div>
+                    <div class="floating-shape shape-3"></div>
+                    <div class="hero-image-main">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="hero-scroll">
+        <a href="#services" class="scroll-link">
+            <span>Scroll Down</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </a>
+    </div>
+</section>
+
+   <!-- Services Section -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-translate="services_title">Our Services</h2>
+            <p data-translate="services_subtitle">Expert solutions tailored to your business needs</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="9" y1="21" x2="9" y2="9"></line>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3 data-translate="service_1_title">Web Design</h3>
+                    <p data-translate="service_1_desc">Custom website designs that look beautiful and function flawlessly. We create responsive, user-friendly interfaces that engage your visitors.</p>
+                    <a href="#" class="service-link" data-translate="service_link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3 data-translate="service_2_title">Web Development</h3>
+                    <p data-translate="service_2_desc">We build modern, fast, and scalable websites and web applications using the latest technologies and best practices.</p>
+                    <a href="#" class="service-link" data-translate="service_link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3 data-translate="service_3_title">Responsive Design</h3>
+                    <p data-translate="service_3_desc">Websites that look and work perfectly on all devices, from desktop computers to mobile phones and tablets.</p>
+                    <a href="#" class="service-link" data-translate="service_link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                        <line x1="16" y1="8" x2="2" y2="22"></line>
+                        <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3 data-translate="service_4_title">UI/UX Design</h3>
+                    <p data-translate="service_4_desc">User-centered design that prioritizes usability, accessibility, and creating meaningful experiences for your audience. We focus on creating interfaces that are intuitive and engaging while maintaining brand consistency.</p>
+                    <a href="#" class="service-link" data-translate="service_link">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Portfolio/Work Section -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-translate="portfolio_title">Our Work</h2>
+            <p data-translate="portfolio_subtitle">Explore some of our recent projects and creative solutions</p>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                </div>
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category" data-translate="portfolio_filter_web">Web Design</span>
+                    <h3 class="portfolio-title">Modern E-commerce Platform</h3>
+                    <p class="portfolio-desc">A custom e-commerce solution with advanced filtering, payment processing, and inventory management.</p>
+                    <a href="#" class="portfolio-link" data-translate="portfolio_link">View Project <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                    </svg>
+                </div>
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">UI/UX Design</span>
+                    <h3 class="portfolio-title">Finance App Interface</h3>
+                    <p class="portfolio-desc">Intuitive mobile banking application with clean interface and security features.</p>
+                    <a href="#" class="portfolio-link">View Project <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                </div>
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Web Development</span>
+                    <h3 class="portfolio-title">Healthcare Portal</h3>
+                    <p class="portfolio-desc">Secure patient portal with appointment scheduling and medical record access.</p>
+                    <a href="#" class="portfolio-link">View Project <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                </div>
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Responsive Design</span>
+                    <h3 class="portfolio-title">Travel Agency Website</h3>
+                    <p class="portfolio-desc">Immersive travel platform with booking system and destination guides optimized for all devices.</p>
+                    <a href="#" class="portfolio-link">View Project <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                </div>
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Full-Stack Development</span>
+                    <h3 class="portfolio-title">Creative Agency Portfolio</h3>
+                    <p class="portfolio-desc">Dynamic showcase website with content management system and interactive elements.</p>
+                    <a href="#" class="portfolio-link">View Project <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-cta">
+            <a href="#contact" class="btn">Discuss Your Project <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section - Alternative Layout -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-translate="about_title">About Us</h2>
+            <p data-translate="about_subtitle">The story behind our passion for digital excellence</p>
+        </div>
+        
+        <div class="about-container">
+            <div class="about-hero">
+                <div class="about-image-large">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3"/>
+                        <circle cx="12" cy="10" r="3"/>
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                </div>
+                <div class="about-hero-content">
+                    <h3 data-translate="about_hero_title">Our Story</h3>
+                    <p data-translate="about_hero_desc">Founded in 2020, we began with a simple mission: to create digital experiences that delight users and drive business growth. Over the years, we've evolved into a full-service digital agency, working with clients across industries to solve complex challenges with innovative solutions.</p>
+                    <div class="about-stats-row">
+                        <div class="stat-block">
+                            <span class="stat-number" data-translate="about_stat_1_number">5+</span>
+                            <span class="stat-label" data-translate="about_stat_1_text">Years Experience</span>
+                        </div>
+                        <div class="stat-block">
+                            <span class="stat-number" data-translate="about_stat_2_number">100+</span>
+                            <span class="stat-label" data-translate="about_stat_2_text">Projects Completed</span>
+                        </div>
+                        <div class="stat-block">
+                            <span class="stat-number" data-translate="about_stat_3_number">2+</span>
+                            <span class="stat-label" data-translate="about_stat_3_text">Team Members</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-features">
+                <div class="about-feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </div>
+                    <h4 data-translate="about_feature_1_title">Creative Approach</h4>
+                    <p data-translate="about_feature_1_desc">We blend artistic vision with strategic thinking to create designs that are both beautiful and effective.</p>
+                </div>
+                
+                <div class="about-feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h4 data-translate="about_feature_2_title">Attention to Detail</h4>
+                    <p data-translate="about_feature_2_desc">Every pixel matters. We obsess over the small details that make a big difference in user experience.</p>
+                </div>
+                
+                <div class="about-feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h4 data-translate="about_feature_3_title">Timely Delivery</h4>
+                    <p data-translate="about_feature_3_desc">We understand the importance of deadlines and consistently deliver projects on time and within budget.</p>
+                </div>
+                
+                <div class="about-feature-card">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h4 data-translate="about_feature_4_title">Client Partnership</h4>
+                    <p data-translate="about_feature_4_desc">We view our clients as partners, working collaboratively to achieve shared goals and long-term success.</p>
+                </div>
+            </div>
+            
+            <div class="about-cta-container">
+                <div class="about-cta-content">
+                    <h3 data-translate="about_cta_title">Ready to Start Your Project?</h3>
+                    <p data-translate="about_cta_desc">Whether you need a new website, a redesign, or a complex web application, we're here to help bring your vision to life.</p>
+                </div>
+                <div class="about-cta-button">
+                    <a href="#contact" class="btn" data-translate="about_cta_button">Get in Touch <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-translate="testimonials_title">What Our Clients Say</h2>
+            <p data-translate="testimonials_subtitle">Feedback from businesses we've helped succeed in the digital world</p>
+        </div>
+        
+        <div class="testimonials-wrapper">
+            <div class="testimonial-card">
+                <div class="testimonial-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 11h-4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6c0 2.667-1.333 4.333-4 5"></path>
+                        <path d="M19 11h-4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6c0 2.667-1.333 4.333-4 5"></path>
+                    </svg>
+                </div>
+                <p class="testimonial-text">Working with this team was an absolute pleasure. They transformed our outdated website into a modern, user-friendly platform that perfectly represents our brand.</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="author-details">
+                        <h4>Charity Gonzalez</h4>
+                        <p>Band Lead, Funk Town Bandits</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card featured">
+                <div class="testimonial-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 11h-4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6c0 2.667-1.333 4.333-4 5"></path>
+                        <path d="M19 11h-4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6c0 2.667-1.333 4.333-4 5"></path>
+                    </svg>
+                </div>
+                <p class="testimonial-text">The e-commerce platform they built has significantly increased our online sales. Their expertise resulted in a seamless shopping experience for our customers. We've seen a 200% increase in conversion rates since launch.</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="author-details">
+                        <h4>Hernan Espinoza</h4>
+                        <p>Sports Broadcaster, La Fiera Deportiva</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 11h-4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6c0 2.667-1.333 4.333-4 5"></path>
+                        <path d="M19 11h-4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v6c0 2.667-1.333 4.333-4 5"></path>
+                    </svg>
+                </div>
+                <p class="testimonial-text">Their ability to translate our requirements into an intuitive portal has been remarkable. The team was responsive and delivered on time and within budget.</p>
+                <div class="testimonial-author">
+                    <div class="author-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="author-details">
+                        <h4>Mike Smith</h4>
+                        <p>Barber/Owner, Mad Mikes Barbershop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="testimonial-cta">
+            <a href="#contact" class="btn">Become Our Next Success Story <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section - Redesigned -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2 data-translate="contact_title">Get In Touch</h2>
+            <p data-translate="contact_subtitle">Ready to start your next project? We'd love to hear from you</p>
+        </div>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h4 data-translate="contact_phone_title">Call Us</h4>
+                    <p data-translate="contact_phone">(123) 456-7890</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h4 data-translate="contact_email_title">Email Us</h4>
+                    <p data-translate="contact_email">info@designstudio.com</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h4 data-translate="contact_address_title">Visit Us</h4>
+                    <p data-translate="contact_address">123 Design Street, Creative City, 12345</p>
+                </div>
+                
+                <div class="contact-social">
+                    <h4 data-translate="contact_social_title">Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h3 data-translate="contact_form_title">Send Us a Message</h3>
+                    <p data-translate="contact_form_desc">Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name" data-translate="contact_form_name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-translate="contact_form_email">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" data-translate="contact_form_subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="Project Inquiry">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" data-translate="contact_form_message">Your Message</label>
+                        <textarea id="message" class="form-control" placeholder="Tell us about your project..." rows="5" required></textarea>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <button type="submit" class="btn" data-translate="contact_form_button">
+                            Send Message
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 0.5rem;">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer - Minimal Design -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <svg class="footer-logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    Midway<span>Design</span>
+                </a>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#home" data-translate="nav_home">Home</a>
+                <a href="#services" data-translate="nav_services">Services</a>
+                <a href="#portfolio" data-translate="nav_work">Work</a>
+                <a href="#about" data-translate="nav_about">About</a>
+                <a href="#testimonials" data-translate="nav_testimonials">Testimonials</a>
+                <a href="#contact" data-translate="nav_contact">Contact</a>
+            </div>
+            
+            <div class="footer-social">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright" data-translate="footer_copyright">&copy; 2025 Midway Web Design. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll Top Button -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+</button>
+
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="assets/css/js/main.js"></script>
+    <script src="assets/css/js/theme.js"></script>
+    <script src="assets/css/js/language.js"></script>
+</body>
+</html>
