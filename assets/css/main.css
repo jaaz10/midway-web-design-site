@@ -332,11 +332,24 @@
     color: var(--accent);
 }
 
+[data-theme="dark"] .nav-link:after {
+    background-color: var(--white);
+}
+
+[data-theme="dark"] .nav-link:hover:after,
+[data-theme="dark"] .nav-link.active:after {
+    background-color: var(--white);
+}
+
 [data-theme="dark"] .logo-text {
     color: var(--text-color);
 }
 
 [data-theme="dark"] .logo-icon {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .logo-main:last-child {
     color: var(--text-color);
 }
 
