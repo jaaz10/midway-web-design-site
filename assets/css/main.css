@@ -2700,7 +2700,7 @@ section {
 }
 
 .testimonial-card:nth-child(3) {
-    grid-column: 1 / span 5;
+    grid-column: 1 / span 12;
 }
 
 .testimonial-card.featured {
