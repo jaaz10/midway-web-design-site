@@ -239,31 +239,31 @@
 }
 
 [data-theme="dark"] .stat-number {
-    color: var(--text-color);
+    color: var(--dark-bg);
 }
 
 [data-theme="dark"] .stat-text {
-    color: var(--text-muted);
+    color: var(--dark-bg);
 }
 
 [data-theme="dark"] .stat-label {
-    color: var(--text-muted);
+    color: var(--dark-bg);
 }
 
 [data-theme="dark"] .about-hero-content h3 {
-    color: var(--text-color);
+    color: var(--dark-bg);
 }
 
 [data-theme="dark"] .about-hero-content p {
-    color: var(--text-muted);
+    color: var(--dark-bg);
 }
 
 [data-theme="dark"] .about-cta-content h3 {
-    color: var(--text-color);
+    color: var(--white);
 }
 
 [data-theme="dark"] .about-cta-content p {
-    color: var(--text-muted);
+    color: var(--white);
 }
 
 [data-theme="dark"] .portfolio-category {
@@ -398,12 +398,12 @@
 }
 
 [data-theme="dark"] .contact-info {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
+    background-color: transparent;
+    border: none;
 }
 
 [data-theme="dark"] .contact-info:hover {
-    border-color: var(--accent);
+    border: none;
 }
 
 [data-theme="dark"] .contact-form-container:hover {
@@ -431,7 +431,7 @@
 }
 
 [data-theme="dark"] .testimonial-card.featured {
-    border-color: var(--accent);
+    border-color: var(--border-color);
 }
 
 [data-theme="dark"] .about-hero:hover {
@@ -450,6 +450,8 @@
 [data-theme="dark"] .about-cta-button .btn:hover {
     background-color: var(--accent);
     color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
 }
 
 [data-theme="dark"] .portfolio-cta .btn:hover {
@@ -470,8 +472,9 @@
 }
 
 [data-theme="dark"] .about-cta-button .btn {
-    border-color: var(--border-color);
-    color: var(--text-color);
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--white);
 }
 
 [data-theme="dark"] .portfolio-cta .btn {
