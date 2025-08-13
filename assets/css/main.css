@@ -665,6 +665,38 @@
     opacity: 0.1;
 }
 
+/* Dark mode styles for toggles */
+[data-theme="dark"] .lang-toggle {
+    background-color: var(--accent-dark);
+    color: var(--white);
+}
+
+[data-theme="dark"] .lang-toggle:hover {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+[data-theme="dark"] .lang-toggle .lang-text {
+    color: var(--white);
+}
+
+[data-theme="dark"] .lang-toggle:hover .lang-text {
+    color: var(--white);
+}
+
+[data-theme="dark"] .theme-toggle {
+    background-color: var(--accent-dark);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+    background-color: var(--accent);
+}
+
+[data-theme="dark"] .theme-toggle .sun-icon,
+[data-theme="dark"] .theme-toggle .moon-icon {
+    stroke: var(--white);
+}
+
 body {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
@@ -691,17 +723,19 @@ body {
     border-radius: 50%;
     position: relative;
     transition: var(--transition);
-    background-color: var(--gray-100);
+    background-color: var(--accent-light);
 }
 
 .theme-toggle:hover {
-    background-color: var(--gray-200);
+    background-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
 }
 
 .sun-icon,
 .moon-icon {
     position: absolute;
-    stroke: var(--primary);
+    stroke: var(--accent-dark);
     transition: var(--transition);
 }
 
@@ -745,26 +779,49 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     position: relative;
     transition: var(--transition);
-    background-color: var(--gray-100);
+    background-color: var(--accent-light);
+    color: var(--accent-dark);
     font-weight: 600;
     font-size: 0.9rem;
 }
 
 .lang-toggle:hover {
-    background-color: var(--gray-200);
+    background-color: var(--accent);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.lang-toggle:hover .lang-text {
+    color: var(--white);
+}
+
+.lang-flag {
+    font-size: 1.2rem;
+    line-height: 1;
 }
 
 .lang-text {
-    color: var(--text-color);
+    color: var(--accent-dark);
 }
 
 @media (max-width: 768px) {
     .lang-toggle-wrapper {
         margin: 1rem 0 0;
+    }
+    
+    .lang-toggle {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .lang-flag {
+        font-size: 1rem;
     }
 }
 

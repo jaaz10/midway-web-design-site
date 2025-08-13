@@ -2,6 +2,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     const langToggle = document.getElementById('langToggle');
     const langText = langToggle.querySelector('.lang-text');
+    const langFlag = langToggle.querySelector('.lang-flag');
+    
+    // Language configuration with flags
+    const languages = {
+        'en': {
+            flag: '🇺🇸',
+            code: 'EN',
+            name: 'English'
+        },
+        'es': {
+            flag: '🇪🇸',
+            code: 'ES',
+            name: 'Español'
+        }
+    };
     
     // Translation dictionary
     const translations = {
@@ -210,8 +225,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // Toggle between English and Spanish
         currentLang = currentLang === 'en' ? 'es' : 'en';
         
-        // Update language text in button
-        langText.textContent = currentLang.toUpperCase();
+        // Update language display in button
+        updateLanguageDisplay(currentLang);
         
         // Save preference
         localStorage.setItem('language', currentLang);
@@ -220,10 +235,22 @@ document.addEventListener('DOMContentLoaded', function() {
         updateLanguage(currentLang);
     });
     
+    // Function to update language display in the toggle button
+    function updateLanguageDisplay(lang) {
+        if (langFlag) {
+            langFlag.textContent = languages[lang].flag;
+        }
+        if (langText) {
+            langText.textContent = languages[lang].code;
+        }
+        // Update aria-label for accessibility
+        langToggle.setAttribute('aria-label', `Switch to ${languages[lang === 'en' ? 'es' : 'en'].name}`);
+    }
+    
     // Function to update all text content on the page
     function updateLanguage(lang) {
-        // Update button text
-        langText.textContent = lang.toUpperCase();
+        // Update language display in button
+        updateLanguageDisplay(lang);
         
         // Update navigation items
         document.querySelectorAll('.nav-item').forEach(item => {
