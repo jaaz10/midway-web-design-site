@@ -365,7 +365,7 @@
 }
 
 [data-theme="dark"] .btn-primary {
-    background-color: var(--accent);
+    background-color: var(--accent-dark);
     color: var(--white);
     box-shadow: var(--shadow);
 }
@@ -381,7 +381,7 @@
 }
 
 [data-theme="dark"] .btn:hover {
-    color: var(--accent);
+    color: var(--text-color);
 }
 
 [data-theme="dark"] .contact-social h4 {
