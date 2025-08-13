@@ -527,12 +527,12 @@
 }
 
 [data-theme="dark"] .hero-stats {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
+    background-color: transparent;
+    border: none;
 }
 
 [data-theme="dark"] .hero-stats:hover {
-    border-color: var(--accent);
+    border: none;
 }
 
 [data-theme="dark"] .stat-divider {
