@@ -123,7 +123,7 @@
 }
 
 [data-theme="dark"] .portfolio-desc {
-    color: var(--text-muted);
+    color: var(--text-color);
 }
 
 [data-theme="dark"] .about {
@@ -267,7 +267,7 @@
 }
 
 [data-theme="dark"] .portfolio-category {
-    color: var(--accent);
+    color: var(--text-color);
 }
 
 [data-theme="dark"] .service-link {
