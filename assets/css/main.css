@@ -242,16 +242,28 @@
     color: var(--text-muted);
 }
 
-[data-theme="dark"] .stat-number {
+[data-theme="dark"] .about .stat-number {
     color: var(--dark-bg);
+}
+
+[data-theme="dark"] .about .stat-text {
+    color: var(--dark-bg);
+}
+
+[data-theme="dark"] .about .stat-label {
+    color: var(--dark-bg);
+}
+
+[data-theme="dark"] .stat-number {
+    color: var(--white);
 }
 
 [data-theme="dark"] .stat-text {
-    color: var(--dark-bg);
+    color: var(--white);
 }
 
 [data-theme="dark"] .stat-label {
-    color: var(--dark-bg);
+    color: var(--white);
 }
 
 [data-theme="dark"] .about-hero-content h3 {
@@ -259,7 +271,7 @@
 }
 
 [data-theme="dark"] .about-hero-content p {
-    color: var(--dark-bg);
+    color: var(--text-light);
 }
 
 [data-theme="dark"] .about-cta-content h3 {
@@ -466,7 +478,7 @@
 }
 
 [data-theme="dark"] .testimonial-cta .btn:hover {
-    background-color: var(--accent);
+    /* background-color: var(--accent); */
     color: var(--white);
 }
 
